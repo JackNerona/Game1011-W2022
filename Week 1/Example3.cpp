@@ -49,32 +49,32 @@ struct Rectangle
 	int width, height;
 };
 
-int main()
-{
-	Rectangle* pRect = nullptr;
-	Person* pPerson = nullptr;
-
-	Rectangle rect; // Instatnce of rectangle struct
-	pRect = &rect;
-
-	(*pRect).width = 10;
-	pRect->height = 20; // preferred way to dereference a pointer to an object
-
-	cout << "Area of the rectangle is: " << pRect->width * pRect->height << endl;
-
-	//Dynamically allocate object through the pointer
-	pRect = new Rectangle; 
-	pRect->width = 6;
-	pRect->height = 5;
-	cout << "Area of the rectangle is: " << pRect->width * pRect->height << endl;
-	delete pRect; //If new is used, end with delete keyword
-
-	pRect = nullptr; //Deallocate pointer after use
-
-	pPerson = new Person("Jack Nerona", 25);
-	cout << pPerson->getName() << "is" << pPerson->getAge() << " years old" << endl;
-	delete pPerson;
-	pPerson = nullptr;
-
-	return 0;
-}
+//int main()
+//{
+//	Rectangle* pRect = nullptr;
+//	Person* pPerson = nullptr;
+//
+//	Rectangle rect; // Instatnce of rectangle struct
+//	pRect = &rect;
+//
+//	(*pRect).width = 10;
+//	pRect->height = 20; // preferred way to dereference a pointer to an object
+//
+//	cout << "Area of the rectangle is: " << pRect->width * pRect->height << endl;
+//
+//	//Dynamically allocate object through the pointer
+//	pRect = new Rectangle; 
+//	pRect->width = 6;
+//	pRect->height = 5;
+//	cout << "Area of the rectangle is: " << pRect->width * pRect->height << endl;
+//	delete pRect; //If new is used, end with delete keyword
+//
+//	pRect = nullptr; //Deallocate pointer after use
+//
+//	pPerson = new Person("Jack Nerona", 25);
+//	cout << pPerson->getName() << " is " << pPerson->getAge() << " years old" << endl;
+//	delete pPerson;
+//	pPerson = nullptr;
+//
+//	return 0;
+//}
